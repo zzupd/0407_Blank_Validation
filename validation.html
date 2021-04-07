@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>유효성 검사</title>
+    <style>
+        * { font-size: 24px; }
+        fieldset {
+            width: 400px;
+            padding: 20px;
+            margin: 20px;
+        }
+        .blankChkMsg {
+            color: #f00;
+            font-size: 18px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <fieldset id="blankChkArea">
+        <legend>공백검사</legend>
+        <input type="text" id="blankChk" size="5" maxlength="3">
+        <button type="button">확인</button>
+        <span class="blankChkMsg"></span>
+    </fieldset>
+
+</body>
+</html>
